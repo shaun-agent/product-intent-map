@@ -2,6 +2,21 @@
 
 **給所有 Builder 的共用教材。** 這份文件回答三個問題：你在 AI 時代的角色是什麼？什麼是一個「完整的產品意圖」？意圖的「邊界」是什麼、怎麼定？
 
+## 所有開發都走同一條路
+
+不管最後交付的是 PPT、PDF、Google Sheet、程式碼，或其他形式，每個 Builder 都走同一條四步流程：
+
+```mermaid
+flowchart LR
+    C["Context<br/>現況、使用者、限制、證據"] --> I["Intent<br/>改變什麼、成功訊號、邊界"]
+    J["Human Judgment<br/>價值、優先序、取捨、責任"] --> I
+    I --> E["Engineering<br/>怎麼做、怎麼驗證、怎麼控制風險"]
+    E --> D["Delivery<br/>PPT / PDF / Google Sheet / Code / ..."]
+    I -.->|決定交付形式與驗收方式| D
+```
+
+**Context 和 Human Judgment 共同決定 Intent。** Context 提供真實世界的現況與限制；Human Judgment 負責價值判斷、優先序與取捨。Intent 是整條流程的鉸鏈：它決定我們要怎麼 Engineering，也決定 Delivery 應該採用什麼形式、做到什麼才算完成。**交付格式是最後一站，不是起點。**
+
 **整份文件的閱讀路線（就是這張圖）：**
 
 ```mermaid
@@ -169,4 +184,4 @@ graph TD
 
 ---
 
-*v1.2 — 2026-07-24。變更：新增 RFC/Bar Raiser 案例研究（感謝 Pahud Hsieh 分享）。v1.1 — 2026-07-23。變更：採納 Builder 框架（感謝 Pahud Hsieh 的回饋）；全文重排為單一閱讀路線（你是誰 → 意圖 → 工具 → 例子 → 邊界 → 規則 → 裁判 → 進階），開頭新增總覽圖。歡迎直接引用、轉發、拿去教。*
+*v1.3 — 2026-07-31。變更：新增所有開發共用的 Context → Intent → Engineering → Delivery 流程。v1.2 — 2026-07-24。變更：新增 RFC/Bar Raiser 案例研究（感謝 Pahud Hsieh 分享）。v1.1 — 2026-07-23。變更：採納 Builder 框架（感謝 Pahud Hsieh 的回饋）；全文重排為單一閱讀路線（你是誰 → 意圖 → 工具 → 例子 → 邊界 → 規則 → 裁判 → 進階），開頭新增總覽圖。歡迎直接引用、轉發、拿去教。*
