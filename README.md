@@ -1,5 +1,7 @@
 # 產品意圖與意圖邊界（Product Intent Map）
 
+[English guide: What makes a good product intent?](README.en.md)
+
 **給所有 Builder 的共用教材。** 這份文件回答三個問題：你在 AI 時代的角色是什麼？什麼是一個「完整的產品意圖」？意圖的「邊界」是什麼、怎麼定？
 
 ## 所有開發都走同一條路
